@@ -340,11 +340,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 
+
+
 .home{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
-  
+
 .hero-text{
     font-family: 'Poppins',sans-serif;
 }
@@ -389,7 +391,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 .hero-img{
-    margin-left: 140px;
+    /* margin-left: 120px; */
     margin-top: -40px;
 }
 
@@ -439,9 +441,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
-.gap{
-    margin-left: 90px;
-}
+
 
 
 
@@ -472,7 +472,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border: none;
     border-radius: 50px;
 }
- 
+
 
 
 .mh-service .mh-service-item{
@@ -577,7 +577,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     
 }
 
- 
+
 .progress.progress-line .progressbar-text{
     position: absolute;
     top: 50%;
@@ -688,7 +688,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
- 
+
 
 
 
@@ -723,22 +723,22 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
- .mh-education-item h4{
+.mh-education-item h4{
      font-size: 20px;
      line-height: 30px;
      font-weight: 400;
      font-family: 'Poppins',sans-serif;
      color: white;
+     
+    }
     
-}
-
-
-
- .mh-education-item  .mh-eduyear{
-     margin: 10px 0;
+    
+    
+    .mh-education-item  .mh-eduyear{
+        margin: 10px 0;
      color: #0bceaf !important;
      font-family: 'Poppins',sans-serif;
-    
+     
 }
 
 
@@ -935,7 +935,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
     opacity: 0;
     letter-spacing: 0px;
-        
+    
 }
 
 
@@ -1055,7 +1055,7 @@ figure:hover figcaption{
     margin-bottom: 30px;
     margin-top: 50px;
     color: #7af8e4;
-        
+    
 }
 
 .pricing h4{
@@ -1096,7 +1096,7 @@ figure:hover figcaption{
     border-bottom-right-radius: 4px;
     font-family: 'Poppins',sans-serif;
     color: white;
-   
+    
 }
 
 
@@ -1108,7 +1108,7 @@ figure:hover figcaption{
 .mh-blog-item .blog-inner{
     padding: 0px 20px;
     padding-bottom: 30px;
-        
+    
 }
 
 .mh-blog-item .blog-inner h2 a{
@@ -1129,6 +1129,44 @@ figure:hover figcaption{
 
 
 
+
+
+
+
+
+
+
+
+
+
+.responsive-home{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+
+
+.responsive-about{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+.responsive-about img{
+    width:100%;
+    height:100%;
+}
+.gap{
+    margin-left: 90px;
+    width:1000px;
+}
+.responsive-contact{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    /* justify-content:space-evenly; */
+}
 
 
 
