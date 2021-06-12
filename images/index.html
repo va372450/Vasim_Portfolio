@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <!-------Google Font linking-------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-------Google Font linking-------->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="..//">
+
+    <!------Animate.css cdn link------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!------Font awesome cdn link------>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-------Bootstrap cdn linking-------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+    <!-------style.css linking-------->
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.goTop.js"></script>
+    <style>
+        .mh-footer ::-webkit-input-placeholder {
+            opacity: 0.9;
+        }
+
+        .mh-footer :-ms-input-placeholder {
+            opacity: 0.9;
+        }
+
+        .mh-footer ::-ms-input-placeholder {
+            opacity: 0.9;
+        }
+
+        .mh-footer ::placeholder {
+            opacity: 0.9;
+        }
+
+        .mh-footer .form-control {
+            padding: 20px;
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+        }
+
+        .mh-footer .form-control:focus {
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            border-color: transparent;
+        }
+
+        .mh-footer .contact-message {
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 20px;
+            outline: 0;
+        }
+
+        .mh-footer .contact-message:focus {
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+            border-color: transparent;
+        }
+
+        /*
+    ==============
+       MAP
+    ==============
+*/
+        .mh-map {
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        .mh-map #mh-map {
+            height: 400px;
+            width: 100%;
+        }
+
+        /*
+    ============
+    Footer Address
+    ==============
+*/
+        .mh-footer-address {
+            margin-bottom: 60px;
+        }
+
+        .mh-footer-address .mh-address-footer-item {
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .mh-footer-address .mh-address-footer-item h4 {
+            margin-bottom: 20px;
+        }
+
+        .mh-footer-address .mh-address-footer-item address {
+            margin-bottom: 0;
+        }
+
+        .mh-footer-address .mh-address-footer-item .each-icon {
+            margin-bottom: 30px;
+        }
+
+        .mh-footer-address .mh-address-footer-item .each-icon .fa {
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+            line-height: 100px;
+            font-size: 20px;
+            border-color: #0bceaf;
+        }
+
+        .form-control {
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+            background-color: transparent;
+            border-color: transparent;
+            margin-bottom: 20px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .form-control:focus {
+            -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+            background-color: transparent;
+        }
+
+        .p-200 {
+            padding: 0 200px;
+        }
+
+        .img-overlay {
+            background-image: url(../images/footer-bg.png);
+            background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            background-position: center center;
+        }
+
+        .image-bg {
+            background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            background-position: center center;
+        }
+
+        .map-image {
+            background-image: url(images/map-color-overlay.png);
+        }
+
+        .shadow-1 {
+            -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .social-icon li {
+            display: inline-block;
+            margin-left: 30px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .social-icon li a {
+            color: white;
+        }
+
+        .mh-copyright p {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
+        .fa-angle-up {
+            font-size: 25px;
+            border: 2px solid white;
+            border-radius: 50px;
+            width: 45px;
+            height: 45px;
+            line-height: 42px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <main class="main" id="main">
+        <header class="header container-fluid">
+            <div class="wrap d-flex">
+                <h1 class="logo">
+                    <a href=""><img src="images/portfolio_(6).png" alt=""></a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a class="smooth-scroll" href="#home">Home</a></li>
+                        <li><a href="#about" class="nav-link smooth-scroll">About</a></li>
+                        <li><a href="#pages" class="smooth-scroll">What I Do</a></li>
+                        <li><a href="#skills" class="smooth-scroll">Skills</a></li>
+                        <li><a href="#gallery" class="smooth-scroll">Projects</a></li>
+                        <li><a href="#mh-contact" class="smooth-scroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="javascript:void(0);" class="sidemenu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </a>
+
+            <div class="sidemenu">
+                <a href="javascript:void(0);" class="close"></a>
+                <nav>
+                    <ul>
+                        <li><a class="smooth-scroll" href="#home">Home</a></li>
+                        <li><a class="smooth-scroll" href="#about">About</a></li>
+                        <li><a class="smooth-scroll" href="#pages">What I Do</a></li>
+                        <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                        <li><a class="smooth-scroll" href="#gallery">Projects</a></li>
+                        <li><a class="smooth-scroll" href="#mh-contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="social">
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/profile.php?id=100005512308510" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/wasim_khan_2986/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/va372450" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/vasim-akram-8a76711aa" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+
+
+                </footer>
+            </div>
+        </header>
+    </main>
+
+
+    <!-------Home markup starts------>
+    <br><br><br><br><br>
+
+    <section class="home container-fluid text-white" id="home">
+        <div class="row responsive-home">
+            <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="hero-text">
+                    <span class="title">Hello i'm</span><br>
+                    <span class="name">Vasim Akram</span> <br>
+                    <span class="designation">FrontEnd Web Developer</span> <br>
+                    <span class="email"><i class="fa fa-envelope"></i>
+                        &nbsp; wk372450@gmail.com</span> <br>
+                    <span class="phone"><i class="fa fa-phone"></i>&nbsp; &nbsp; 9887892854</span>
+
+
+
+                    <div class="social-icons d-flex">
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/profile.php?id=100005512308510" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/wasim_khan_2986/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/va372450" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/vasim-akram-8a76711aa" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class=" wow fadeInUp">
+                <div class="hero-img">
+                    <div class="img-border">
+                        <img src="images/cover.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!------About markup starts------>
+
+    <br><br><br><br><br>
+
+    <section class="about" id="about">
+        <div class="container-fluid">
+            <div class="row responsive-about">
+                <div class=" wow bounceInLeft" data-wow-duration="1.1s" data-wow-delay="1.1s">
+                    <img src="images/seo-home1.png" alt="">
+                </div>
+                <div class=" text-white gap wow bounceInLeft" data-wow-duration="1.1s" data-wow-delay="1.1s">
+                    <br><br><br><br>
+                    <h2>Slice of me</h2>
+                    <br>
+                    <p>Hii I'm Vasim Akram, a FrontEnd Web Developer.</p>
+                    <br>
+                    <p>
+                        I'm currently pursuing my graduation(B.tech) at Arya College of Engineering & IT in Information
+                        Technology Branch. I have experience building Websites from the ground up using HTML , CSS , and
+                        JavaScript but also using more advanced frameworks and technologies like React , Bootstrap to
+                        make my websites to the next level. Designing and building websites is my passion.
+                    </p>
+                    <br>
+
+                    <div class="tag">
+                        <ul>
+                            <li><span>C</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>MySQL</span></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="download-button">
+                        <a href="images/Vasim_Akram_CV.docx" class="btn btn-danger" download=Vasim_Akram_CV>Download
+                            cv</a>
+                        <a href="#contactForm" class="btn btn-danger smooth-scroll ml-5">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-----Service markup starts----->
+
+    <br><br><br><br><br><br>
+
+    <section class="mh-service text-white" id="pages">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>What I do</h3>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-cogs purple-color"></i>
+                        <h3>Development</h3>
+                        <p>
+                            I love the process of creating , designing , developing websites. Analyze users needs and
+                            then design , test , and develop website to meet those needs.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code iron-color"></i>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Being a FrontEnd Developer , It's my responsibility that the design should be optimized for
+                            Desktop , Tablet , and Mobile view.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-bullseye sky-color"></i>
+                        <h3>UI Design</h3>
+                        <p>
+                            My work is to design all the screens through which a user will move, and to create the
+                            visual elements and their interactive properties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-object-ungroup purple-color"></i>
+                        <h3>Coding</h3>
+                        <p>
+                            Being a good coder , it's my responsibility to design , write , debug , and then test code
+                            for computer software.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-window-restore iron-color"></i>
+                        <h3>Animation</h3>
+                        <p>
+                            By using animation , we can create attractive website. It can engage and hold people's
+                            attention longer than just a static web page.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="mh-service-item">
+                        <i class="fa fa-ioxhost sky-color"></i>
+                        <h3>Hosting</h3>
+                        <p>
+                            I am responsible for things like server maintenance, security, so the files on the server
+                            can be readily accessed by a website browser.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-----Skills & Chart markup starts----->
+
+    <br><br><br><br><br><br><br><br>
+
+    <section class="mh-skills" id="skills">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-skills-inner">
+                        <div class="mh-professional-skill">
+                            <h3> Technical Skills</h3>
+                            <div class="each-skills">
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">HTML</div>
+                                            <div class="percentage-num">85%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 85%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">CSS</div>
+                                            <div class="percentage-num">60%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 60%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">JavaScript</div>
+                                            <div class="percentage-num">70%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 70%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">React js</div>
+                                            <div class="percentage-num">60%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 60%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-professional-skills">
+                        <h3>Professional Skills</h3>
+                        <ul class="mh-professional-progress">
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                <div class="pr-skill-name">Communication</div>
+                            </li>
+
+
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="60"></div>
+                                <div class="pr-skill-name">Team work</div>
+                            </li>
+
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="80"></div>
+                                <div class="pr-skill-name">Project Management</div>
+                            </li>
+
+
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                                <div class="pr-skill-name">Creativity</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------Education Timeline--------->
+    <br><br><br><br><br><br><br>
+
+    <section class="mh-experience">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-smd-12 col-md-6">
+                    <div class="mh-education">
+                        <h3>Education</h3>
+                        <div class="mh-education-details">
+                            <div class="mh-education-item">
+                                <h4>Pursuing Graduation(B.tech) From <a href="https://www.aryacollege.in/">Arya College
+                                        of Engineering & I.T.</a></h4>
+                                <div class="mh-eduyear">2017-2021</div>
+                                <p>
+                                    University : Rajasthan Technical University
+                                </p>
+                                <p>Percentage(till VI Sem) : 63.4%</p>
+                            </div>
+
+
+                            <div class="mh-education-item">
+                                <h4>Higher Secondary Education From <a
+                                        href="https://new-nehru-senior-secondary-school.business.site/">New Nehru Bal
+                                        Vidhya Mandir Sin Sec School</a></h4>
+                                <div class="mh-eduyear">2016-2017</div>
+                                <p>
+                                    State Board : Rajasthan Board of Secondary Education
+                                </p>
+                                <p>Percentage : 70.60%</p>
+                            </div>
+
+
+                            <div class="mh-education-item">
+                                <h4>Secondary Education From <a
+                                        href="https://www.facebook.com/Lakshya-Convent-158156344866133/">Lakshya Convent
+                                        Sec School</a></h4>
+                                <div class="mh-eduyear">2014-2015</div>
+                                <p>
+                                    State Board : Rajasthan Board of Secondary Education
+                                </p>
+                                <p>Percentage : 78.18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-work">
+                        <h3>Work Experience</h3>
+                        <div class="mh-experience-details">
+                            <div class="mh-work-item">
+                                <h4>Web Developer(Intern) <a href="http://athleanindia.com/">AthleanIndia</a></h4>
+                                <div class="mh-eduyear">August 2020-January 2021</div>
+                                <span>Responsibilities</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> Create Front-End Website</li>
+                                    <li><i class="fa fa-circle"></i> Create and Validate Forms</li>
+                                </ul>
+                                <span>Technologies Used</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> HTML5</li>
+                                    <li><i class="fa fa-circle"></i> CSS3</li>
+                                    <li><i class="fa fa-circle"></i> JavaScript</li>
+                                    <li><i class="fa fa-circle"></i> Bootstrap</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mh-work-item">
+                                <h4>Client Side Work For <a href="http://appcl.in/">APPCL</a></h4>
+                                <div class="mh-eduyear">February 2021-March 2021</div>
+                                <span>Responsibilities</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> Create Front-End Website</li>
+                                    <li><i class="fa fa-circle"></i> Create Responsive Website</li>
+                                </ul>
+                                <span>Technologies Used</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> HTML5</li>
+                                    <li><i class="fa fa-circle"></i> CSS3</li>
+                                    <li><i class="fa fa-circle"></i> JavaScript</li>
+                                    <li><i class="fa fa-circle"></i> Bootstrap</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------Portfolio markup-------->
+
+
+    <br><br><br><br><br><br><br>
+
+
+    <section class="mh-portfolio" id="gallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="section-title col-sm-12">
+                    <h3>Recent Projects</h3>
+                </div>
+                <br><br><br><br><br>
+                <div class="part col-sm-12">
+                    <div class="portfolio-nav col-sm-12" id="filter-button">
+                        <ul>
+                            <li data-filter="*" class="current">
+                                <span>All Categories</span>
+                            </li>
+
+                            <li data-filter=".user-interface">
+                                <span>Web Design</span>
+                            </li>
+
+                            <li data-filter=".mockup">
+                                <span>Game</span>
+                            </li>
+
+                            <li data-filter=".branding">
+                                <span>Client Side Work</span>
+                            </li>
+
+                            <li data-filter=".ui">
+                                <span>Practice</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                        <div class="portfolioContainer row">
+
+
+
+
+                            <div class="grid-item col-md-4 user-interface">
+                                <figure>
+                                    <img src="images/project_41.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/OnlineMeal/" style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Web Design</h5>
+                                        <span class="sub-title">MyOrder</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 mockup">
+                                <figure>
+                                    <a href="">
+                                        <img src="images/project_3.png" alt="">
+                                    </a>
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/Rock_Paper_Scissor_game/"
+                                            style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Game</h5>
+                                        <span class="sub-title">Rock_Paper_Scissor</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="grid-item col-md-4 ui">
+                                <figure>
+                                    <a href="">
+                                        <img src="images/project_6.png" alt="">
+                                    </a>
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/wasimfronts/" style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Practice</h5>
+                                        <span class="sub-title">PhotoGallery</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                            <div class="grid-item col-md-4 user-interface">
+                                <figure>
+                                    <a href="">
+                                        <img src="images/project_71.png" alt="">
+                                    </a>
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/studio/" style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Web Design</h5>
+                                        <span class="sub-title">StudioHunt</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                            <div class="grid-item col-md-4 branding">
+                                <figure>
+                                    <a href="">
+                                        <img src="images/project_51.png" alt="">
+                                    </a>
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/Appcl_project/" style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Client Side Work</h5>
+                                        <span class="sub-title">APPCL</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+
+                            <div class="grid-item col-md-4 user-interface">
+                                <figure>
+                                    <a href="">
+                                        <img src="images/project_21.png" alt="">
+                                    </a>
+                                    <figcaption class="fig-caption">
+                                        <a href="https://va372450.github.io/mystore/" style="color:white;">
+                                            <i class="fa fa-search sky-color"></i>
+                                        </a>
+                                        <h5 class="title">Web Design</h5>
+                                        <span class="sub-title">MyOnlineStore</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+    <footer class="mh-footer" id="mh-contact">
+        <div class="map-image image-bg">
+            <div class="container-fluid">
+                <div class="row section-separator">
+                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <br><br><br>
+                        <h3>Contact Me</h3>
+                    </div>
+
+                    <div class="col-sm-12 mh-footer-address">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-location-arrow"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Address</h4>
+                                        <address>
+                                            Bundi , Rajasthan
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Email</h4>
+                                        <h6 class="text-white">wk372450@gmail.com</h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Phone</h4>
+                                        <h6 class="text-white">9887892854</h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive-contact">
+                        <div class=" wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <form action="https://formspree.io/f/mknkrywy" method="POST" id="contactForm"
+                                class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 input-color">
+                                        <input name="firstname" class="contact-name form-control" id="name" type="text"
+                                            placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 input-color">
+                                        <input name="lastname" class="contact-email form-control" id="L_name"
+                                            type="text" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-sm-12 input-color">
+                                        <input name="_replyto" class="contact-subject form-control" id="email"
+                                            type="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-sm-12 input-color">
+                                        <textarea class="contact-message" name="message" id="message" rows="6"
+                                            placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <!-- Subject Button -->
+                                    <div class="btn-form col-sm-12">
+                                        <button type="submit" value="send" class="btn btn-fill btn-block btn-danger"
+                                            id="form-submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="mh-map ml-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.603171599609!2d75.6331732301563!3d25.437635500543692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f09450a2ce00b%3A0x8d8c69d14ebd01d8!2sGuru%20Nanak%20Colony%2C%20Housing%20Board%20Colony%2C%20Bundi%2C%20Rajasthan%20323001!5e0!3m2!1sen!2sin!4v1622673674575!5m2!1sen!2sin"
+                                    width="530px" height="390px" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <br>
+                                <div class="text-left text-white text-xs-center">
+                                    <p>Copyright © PORTFOLIO. </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+                                <ul class="social-icon">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100005512308510"
+                                            target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/wasim_khan_2986/" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://github.com/va372450" target="_blank"><i
+                                                class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/vasim-akram-8a76711aa" target="_blank"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#main" class="smooth-scroll"><i class="fa fa-angle-up"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+
+    <script src="circle-progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".sidemenu-toggler").click(function () {
+                $(".sidemenu").addClass("active");
+            });
+
+            $(".close").click(function () {
+                $(".sidemenu").removeClass("active");
+            });
+
+
+            $(window).scroll(function () {
+                var sc = $(window).scrollTop();
+                if (sc > 150) {
+                    $(".header").addClass("sticky");
+                } else {
+                    $(".header").removeClass("sticky");
+                }
+            });
+
+            $(window).on("load", function () {
+                var $container = $('.portfolioContainer');
+                $container.isotope({
+                    filter: '*',
+                    animationOptions: {
+                        queue: true
+                    }
+                });
+
+                $('.portfolio-nav li').click(function () {
+                    $('.portfolio-nav .current').removeClass('current');
+                    $(this).addClass('current');
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({
+                        filter: selector,
+                        animationOptions: {
+                            queue: true
+                        }
+                    });
+                    return false;
+                });
+
+            });
+
+            $('#portfolio-item').mixItUp();
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".sidemenu-toggler").click(function () {
+                $(".sidemenu").addClass("active");
+            });
+            $(".close").click(function () {
+                $(".sidemenu").removeClass("active");
+            });
+
+            $(window).scroll(function () {
+                var sc = $(window).scrollTop();
+                if (sc > 150) {
+                    $(".header").addClass("sticky");
+                } else {
+                    $(".header").removeClass("sticky");
+                }
+            });
+
+
+
+
+        });
+
+
+    </script>
+
+
+    <script>
+
+
+
+        $(function () {
+            $("a.smooth-scroll").click(function (event) {
+                event.preventDefault();
+                var section = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(section).offset().top - 124
+                }, 1250, "easeInOutExpo");
+            });
+        });
+
+
+
+
+
+
+
+
+    </script>
+    <script>
+        // new WOW().init();
+    </script>
+
+
+
+
+</body>
+
+</html>
