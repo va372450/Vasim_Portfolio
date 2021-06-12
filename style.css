@@ -38,7 +38,6 @@ html{
 }
 
 body, h1, h2, h3, h4, h5, p, ol, ul{
-    margin: 0;
     padding: 0;
     font-weight: normal;
 }
@@ -46,6 +45,7 @@ body, h1, h2, h3, h4, h5, p, ol, ul{
 body{
     background: #212529;
     height: 2000px;
+    margin:0 35px;
 }
 
 
@@ -170,7 +170,7 @@ ul{
 
 .header .sidemenu-toggler > span:nth-child(2){
     margin: 4px 0 4px auto;
-    width: 75%;
+    width: 60%;
     transition: 0.3s all;
 }
 
@@ -270,14 +270,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 .header .sidemenu nav a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
 }
 
 
 .header .sidemenu footer{
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 0.9em;
     text-transform: uppercase;
 }
@@ -294,8 +294,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: all 0.3s linear;
     margin-right: 5px;
@@ -364,7 +364,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 .name{
-    font-size: 80px;
+    font-size: 65px;
     letter-spacing: -1px;
 }
 
