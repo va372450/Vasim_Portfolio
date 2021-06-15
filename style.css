@@ -45,7 +45,7 @@ body, h1, h2, h3, h4, h5, p, ol, ul{
 body{
     background: #212529;
     height: 2000px;
-    margin:0 35px;
+    margin:0 25px;
 }
 
 
@@ -104,8 +104,8 @@ ul{
 
 
 .header .logo{
-    margin: 5px;
-    padding: 16px 0;
+    /* margin: 5px; */
+    padding: 15px 0;
 }
 
 

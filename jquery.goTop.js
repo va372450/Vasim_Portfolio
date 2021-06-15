@@ -1,8 +1,3 @@
-/**
- * jquery.goTop 返回顶部插件 v0.1
- * 作者：nekoleamo
- */
-;
 (function ($, window, document) {
   $.fn.goTop = function (options) {
     var defaults = {
